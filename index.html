@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Primary Meta Tags -->
+<title>Ecommerce </title>
+<meta name="title" content="Ecommerce ">
+<meta name="description" content="Ecommercce website san kyi tar">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="mms-it">
+<meta property="og:title" content="Ecommerce ">
+<meta property="og:description" content="Ecommercce website san kyi tar">
+<meta property="og:image" content="image/">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Ecommerce ">
+<meta property="twitter:description" content="Ecommercce website san kyi tar">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  
+  <title>E-commerce product page</title>
+  
+
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    body{
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    .user-img{
+      border: 2px solid hsl(26, 100%, 55%) ;
+      border-radius: 50%;
+    }
+    .img-one{
+      width: 350px;
+      height: 350px;
+      border-radius: 15px;
+      /* background-image: url(images/image-product-1.jpg); */
+
+    }
+    .tumb-img{
+      width: 70px;
+      height: 70px;
+      transition: 0.5s;
+     
+    }
+    .tumb-img:hover{
+      transform: scale(1.1);
+    }
+    .card{
+      display: none;
+    }
+    #noti{
+      display: none;
+      margin-bottom: -12px !important;
+      margin-left: 13px;
+     
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bolder" href="#">Sneakers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" aria-current="page" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Contact</a>
+            </li>
+            
+          </ul>
+        <div class="d-flex">
+          <div class="me-5">
+            <span class="badge bg-danger rounded-circle" id="noti">0</span>
+            <img src="images/icon-cart.svg" class="mt-2 " id="cart" style="width: 25px;height: 25px;" alt="">
+  
+          </div>
+            <img src="images/image-avatar.png" class="user-img" style="width: 43px;height: 43px;" alt="">
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-4">
+        <div class="card mt-4 border-0 shadow position-absolute w-25 ">
+          <div class="card-body">
+            <div class=" d-flex justify-content-between align-items-center">
+              <p class="fw-bolder mb-0">Cart</p>
+              <button type="button" class="btn-close" id="aa" ></button>
+              <!-- <i class="fas fa-times"></i> -->
+            </button>
+            </div>
+            <hr class="mt-1">
+              <div class="" id="cardVal">
+                  <div class="my-5 mx-4">
+                  <p class="text-muted text-center">Your Cart is empty</p>
+                </div>
+                <!-- <div class="mb-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="me-2">
+                      <img src="images/image-product-2-thumbnail.jpg" class="rounded" style="width: 50px;" alt="">
+                    </div>
+                    <div class="me-2">
+                      <p class="m-0 text-black-50">Fall Limited Edition Sneakers</p>
+                      <p class="text-black-50">$125.00*<span class="count" id="">1</span> <span class="fw-bold" id="total">$125.00</span> </p>
+                    </div>
+                    <img src="images/icon-delete.svg" style="height: 20px;" alt="">
+                  </div>
+                  <button class="btn w-100 text-white" style="background-color: hsl(26, 100%, 55%);">Checkout</button>
+                </div> -->
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-6">
+        <div class="mb-5">
+            <div class="text-center mt-5">
+            <img src="images/image-product-1.jpg" class="img-one shadow" id="main-img" alt="">
+
+            </div>
+            <div class="text-center my-4">
+              
+                <img src="images/image-product-1-thumbnail.jpg" id="img-one" class="tumb-img shadow rounded rounded-3 me-3" alt="">
+                <img src="images/image-product-2-thumbnail.jpg" id="img-two" class="tumb-img shadow rounded rounded-3 me-3" alt="">
+                <img src="images/image-product-3-thumbnail.jpg" id="img-three" class="tumb-img shadow rounded rounded-3 me-3" alt="">
+                <img src="images/image-product-4-thumbnail.jpg" id="img-four" class="tumb-img shadow rounded rounded-3" alt="">
+              
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="m-5 w-75">
+              <p class="mt-5 mb-3 fw-bolder text-uppercase" style="color: hsl(26, 100%, 55%);">Sneaker Company</p>
+              <h1 class="fw-bolder mb-3">Fall Limited Edition Sneakers</h1>
+              <p class="text-black-50">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+              <div class="d-flex align-items-center mb-1">
+              <h3 class="d-inline-block fw-bolder mb-0 me-3"> $125.00</h3><span class="" style="color:hsl(26, 100%, 55%) ;">50%</span>
+
+              </div>
+              <p class="text-black-50 text-decoration-line-through "> $250.00</p>
+
+              <div class="">
+                <button class="btn me-3 px-2" id="decrease" >	<img src="images/icon-minus.svg" alt=""></button>
+                <span class="me-3 fw-bolder" id="inDeCount"> 0 </span>
+                <button class="btn px-2 me-3" id="increase">	<img src="images/icon-plus.svg" alt=""></button>
+                <button class="btn btn-lg px-5 text-white "  id="addBtn" style="background-color: hsl(26, 100%, 55%);"><img src="images/icon-cart.svg"   alt="" class="me-2 text-white">Add to card</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      let mainImg= document.getElementById("main-img");
+      document.getElementById("img-one").addEventListener("click",function(){
+        mainImg.src = "images/image-product-1.jpg";
+      });
+      document.getElementById("img-two").addEventListener("click",function(){
+        mainImg.src = "images/image-product-2.jpg";
+      });
+      document.getElementById("img-three").addEventListener("click",function(){
+        mainImg.src = "images/image-product-3.jpg";
+      });
+      document.getElementById("img-four").addEventListener("click",function(){
+        mainImg.src = "images/image-product-4.jpg";
+      });
+
+      document.getElementById("addBtn").onclick=function(){
+        // document.querySelector(".card").style.display="block"
+        // this.disabled = "true";
+        let inDeCount =document.getElementById("inDeCount").innerHTML;
+        let cardVal = document.getElementById("cardVal");
+        if(inDeCount == 0){
+          cardVal.innerHTML = `
+          <div class="my-5 mx-4">
+                  <p class="text-muted text-center">Your Cart is empty</p>
+                </div>
+          `;
+          document.getElementById("noti").style.display = "none"
+        }else{
+          
+          cardVal.innerHTML = `
+          <div class="mb-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="me-2">
+                      <img src="images/image-product-2-thumbnail.jpg" class="rounded" style="width: 50px;" alt="">
+                    </div>
+                    <div class="me-2">
+                      <p class="m-0 text-black-50">Fall Limited Edition Sneakers</p>
+                      <p class="text-black-50">$125.00*<span class="count" id="count">1</span> <span class="fw-bold" id="total">$125.00</span> </p>
+                    </div>
+                    <img src="images/icon-delete.svg" onclick="clearFun()" style="height: 20px;" alt="">
+                  </div>
+                  <button class="btn w-100 text-white" style="background-color: hsl(26, 100%, 55%);">Checkout</button>
+                </div>
+          `;
+         
+          document.getElementById("noti").innerText=inDeCount;
+          document.getElementById("noti").style.display = "block"
+        }
+       
+        document.getElementById("count").innerText = inDeCount;
+          document.getElementById("total").innerText = "$"+inDeCount*125.00+".000";
+      }
+
+
+      document.getElementById("decrease").addEventListener("click",function(){
+        let inDeCount = document.getElementById("inDeCount").innerHTML; 
+        let inDeCountVal = parseInt(inDeCount);
+        console.log(inDeCount)
+        if(inDeCountVal>0){
+          document.getElementById("inDeCount").innerHTML=inDeCountVal-1;
+        }
+      });
+      document.getElementById("increase").addEventListener("click",function(){
+       
+        let inDeCount = document.getElementById("inDeCount").innerHTML; 
+        let inDeCountVal = parseInt(inDeCount);
+        document.getElementById("inDeCount").innerHTML = inDeCountVal + 1;               
+      });
+
+
+      document.getElementById("cart").addEventListener("click",function(){
+       
+       document.getElementById("addBtn").disabled="true";
+       document.querySelector(".card").style.display="block";
+       console.log("cart btn")
+     });
+      document.getElementById("aa").addEventListener("click",function(){
+        document.getElementById("addBtn").removeAttribute("disabled");
+        document.querySelector(".card").style.display="none";
+        // document.getElementById("addBtn").disabled = "false";
+
+      });
+
+      function clearFun(){
+        console.log("clear")
+        let inDeCount =document.getElementById("inDeCount").innerHTML;
+        let cardVal = document.getElementById("cardVal");
+        cardVal.innerHTML = `
+          <div class="my-5 mx-4">
+                  <p class="text-muted text-center">Your Cart is empty</p>
+                </div>
+          `;
+          document.getElementById("noti").style.display = "none";
+          document.getElementById("inDeCount").innerHTML=0;
+      }
+
+     
+
+     
+  </script>
+
+</body>
+</html>
